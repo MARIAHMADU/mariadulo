@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Página de Pagamento</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Obrigado por sua compra!</h2>
+            <p>Seu pedido foi recebido e está sendo processado.</p>
+            <h3>Detalhes do Pagamento</h3>
+            <form id="payment-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="cartao">Número do Cartão:</label>
+                <input type="text" id="cartao" required>
+
+                <label for="validade">Validade (MM/AA):</label>
+                <input type="text" id="validade" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+
+                <button type="submit">Finalizar Pagamento</button>
+            </form>
+        </div>
+    </main>
+
+   
+
+    <script>
+        document.getElementById('payment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Pagamento realizado com sucesso!');
+            // Aqui você pode adicionar lógica para processar o pagamento
+            window.location.href = "index.html"; // Redireciona para a página inicial
+        });
+    </script>
+</body>
+</html>

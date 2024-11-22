@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Loja de Brinquedos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Loja de Brinquedos</h1>
+        <nav>
+
+            <a href="loja.html">Loja</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Todos os Produtos</h2>
+        <div class="produtos">
+            <div class="produto" onclick="openProduct('produto1.html')">
+                <h3>Brinquedo 1</h3>
+                <img src="imagens/brinquedo1.jpg" alt="Brinquedo 1">
+                <p>R$ 49,90</p>
+            </div>
+            <div class="produto" onclick="openProduct('produto2.html')">
+                <h3>Brinquedo 2</h3>
+                <img src="imagens/brinquedo2.jpg" alt="Brinquedo 2">
+                <p>R$ 79,90</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Loja de Brinquedos</p>
+    </footer>
+
+    <script>
+        function openProduct(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

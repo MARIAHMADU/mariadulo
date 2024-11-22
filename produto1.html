@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Brinquedos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Loja de Brinquedos</h1>
+        <nav>
+            <a href="index.html">Loja</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Todos os Produtos</h2>
+        <div class="produtos">
+            <div class="produto">
+                <h3>Brinquedo 1</h3>
+                <img src="imagens/brinquedo1.jpg" alt="Brinquedo 1">
+                <p>R$ 49,90</p>
+                <button onclick="addToCart('Brinquedo 1', 49.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Brinquedo 2</h3>
+                <img src="imagens/brinquedo2.jpg" alt="Brinquedo 2">
+                <p>R$ 79,90</p>
+                <button onclick="addToCart('Brinquedo 2', 79.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Brinquedo 3</h3>
+                <img src="imagens/brinquedo3.jpg" alt="Brinquedo 3">
+                <p>R$ 59,90</p>
+                <button onclick="addToCart('Brinquedo 3', 59.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Brinquedo 4</h3>
+                <img src="imagens/brinquedo4.jpg" alt="Brinquedo 4">
+                <p>R$ 89,90</p>
+                <button onclick="addToCart('Brinquedo 4', 89.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Brinquedo 5</h3>
+                <img src="imagens/brinquedo5.jpg" alt="Brinquedo 5">
+                <p>R$ 29,90</p>
+                <button onclick="addToCart('Brinquedo 5', 29.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Brinquedo 6</h3>
+                <img src="imagens/brinquedo6.jpg" alt="Brinquedo 6">
+                <p>R$ 69,90</p>
+                <button onclick="addToCart('Brinquedo 6', 69.90)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Loja de Brinquedos</p>
+    </footer>
+
+    <script>
+        function addToCart(produto, preco) {
+            const listaCarrinho = document.getElementById('lista-carrinho');
+            const itemCarrinho = document.createElement('li');
+            itemCarrinho.textContent = `${produto} - R$ ${preco.toFixed(2)}`;
+            listaCarrinho.appendChild(itemCarrinho);
+            alert(`${produto} adicionado ao carrinho!`);
+        }
+    </script>
+</body>
+</html>
+

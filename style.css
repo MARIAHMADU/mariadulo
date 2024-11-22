@@ -1,0 +1,237 @@
+body {
+    background-color: #FFEB3B; /* Fundo amarelo claro */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #3E2723; /* Texto marrom escuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;  /* Organiza o conteúdo em coluna */
+    min-height: 100vh; 
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background-color: #FF4081; /* Cabeçalho rosa vibrante */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 220%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: #FF4081; /* Títulos em rosa vibrante */
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    width: 150px; /* Largura fixa para os produtos */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #00B0FF; /* Botões em azul claro */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0091EA; /* Azul mais escuro ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FF4081; /* Rodapé rosa vibrante */
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer .footer-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+/* Título da seção de produtos */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Título escuro para contraste */
+}
+
+/* Contêiner dos produtos com Grid para 6 colunas */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 colunas de tamanho igual */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 0 20px;
+    margin: 0 auto; /* Centraliza o grid */
+    max-width: 1200px; /* Limita a largura do grid */
+}
+
+/* Estilo de cada produto */
+.produto {
+    background-color: #fff; /* Fundo branco para os produtos */
+    border: 1px solid #ddd; /* Bordas suaves */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+}
+
+.produto p {
+    font-size: 18px;
+    color: #333; /* Texto escuro para boa legibilidade */
+    margin-top: 10px;
+}
+
+/* Efeito ao passar o mouse sobre o produto */
+.produto:hover {
+    transform: translateY(-10px); /* Levanta o item quando o mouse passa */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Estilo do botão de adicionar ao carrinho */
+.produto button {
+    background-color: #4CAF50; /* Verde para combinar com o cabeçalho */
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Botão arredondado */
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #45a049; /* Cor mais escura ao passar o mouse */
+}
+
+.container {
+    max-width: 1200px; /* Ajuste a largura conforme necessário */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 0 15px; /* Adiciona espaçamento interno */
+}
+
+/* Seção Sobre Nós */
+.sobre-nos {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.sobre-nos h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sobre-nos p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos links das redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-icon {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon.facebook {
+    background-color: #3b5998; /* Cor do Facebook */
+}
+
+.social-icon.instagram {
+    background-color: #e1306c; /* Cor do Instagram */
+}
+
+.social-icon.twitter {
+    background-color: #00acee; /* Cor do Twitter */
+}
+
+/* Efeito de hover nos links das redes sociais */
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+
+/* Ajuste de navegação (se necessário) */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
